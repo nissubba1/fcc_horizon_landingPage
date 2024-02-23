@@ -1,0 +1,341 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ff8e3c;
+}
+
+#header {
+  /* background-color: #6246ea; */
+  background-color: #f25f4c;
+  position: sticky;
+  top: 0;
+}
+
+#nav-bar {
+  width: 100%;
+  max-height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  z-index: 1000;
+}
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-list {
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  background-color: #004643;
+  border-radius: 0.5rem;
+}
+
+#header-img {
+  max-height: 7rem;
+  width: auto;
+}
+
+#home {
+  max-width: 100%;
+  height: calc(100vh);
+  background-image: url(https://www.gamespot.com/a/uploads/original/1632/16320660/3939488-3918472-horizonforbiddenwest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  overflow: hidden;
+}
+.story-container {
+  background-color: #f7f7f7;
+}
+.world-container {
+  background-color: #004643;
+  color: #fff;
+}
+.combat-container {
+  background-color: #f7f7f7;
+}
+.trailer-container {
+  background-color: #ff8e3c;
+}
+.buy-now-container {
+  background-color: #f7f7f7;
+}
+.about-me-container {
+  background-color: #ff8e3c;
+}
+
+.img-flex-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.sub-container {
+  padding: 10rem 5rem;
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-title-container {
+  padding-top: 30rem;
+  max-width: 60%;
+  color: #fff;
+}
+
+.hero-title {
+  font-family: "Protest Strike";
+  font-size: 12rem;
+  font-weight: bold;
+  color: #0f0e17;
+}
+
+.hero-sub-title {
+  margin-top: 2rem;
+  font-family: "Roboto";
+  font-size: 5rem;
+  color: #000;
+}
+
+.hero-content {
+  margin-top: 2rem;
+  color: #000;
+  font-size: 3rem;
+}
+
+.call-to-action {
+  padding: 3rem 0;
+}
+
+.btn {
+  font-size: 2rem;
+  margin-right: 3rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.trailer-btn {
+  background-color: #fff;
+}
+
+.trailer-btn:hover {
+  background-color: #ff8e3c;
+}
+
+.buy-btn {
+  background-color: #ff8e3c;
+}
+
+.buy-btn:hover {
+  background-color: #fff;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article,
+.trailer-wrapper,
+.game-article,
+.about-me-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.article {
+  max-width: 40%;
+}
+
+.section-title {
+  font-family: "Roboto";
+  font-size: 4rem;
+}
+
+.content {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.hr-line {
+  width: 100%;
+  height: 0.3rem;
+  border: none;
+  background-color: red;
+}
+
+.trailer-wrapper {
+  max-width: 100%;
+}
+
+.trailer-wrapper iframe {
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: inline-block;
+  border: none;
+}
+
+.game-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.game-card {
+  padding: 2rem;
+  background-color: #0f0e17;
+  color: #fff;
+  border-radius: 0.5rem;
+  max-width: 50rem;
+  max-height: 75rem;
+  height: 75rem;
+  overflow: hidden;
+}
+
+.game-img {
+  max-width: 60rem;
+  width: 100%;
+}
+.game-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+}
+
+.game-ed-title {
+  color: #fffffe;
+  padding-top: 4rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.game-features {
+  padding: 3rem;
+  font-size: 2rem;
+  color: #a7a9be;
+}
+
+.buy-now-btn {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ff8e3c;
+}
+
+.game-features li {
+  list-style: disc;
+  line-height: 3.5rem;
+}
+
+.btn-standard {
+  margin-top: 7.5rem;
+}
+
+.update-title {
+  font-family: "Roboto";
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.update-content {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.fieldset {
+  border: none;
+  font-size: 2rem;
+}
+
+.fieldset label {
+  font-size: 3rem;
+}
+
+.update-container {
+  background-color: #004643;
+  color: #fff;
+}
+
+input {
+  display: block;
+  width: 60%;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.email-input {
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #ff8e3c;
+  border: none;
+  max-width: 20rem;
+  margin-top: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  padding: 1rem;
+  height: auto;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f25f4c;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 31.2%;
+  }
+}
